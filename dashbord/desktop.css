@@ -1,0 +1,29 @@
+body{
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.5fr 20fr;
+    gap: 0;
+    position: relative;
+}
+header {
+    grid-area: 1 / 1 / -1 / 2;
+    position: sticky;
+    top: 50px;
+    align-self: start;
+    width: 100px;
+    transition: width .4s ease-in-out;
+    text-align: center;
+}
+header:hover {
+    width: 200px;
+}
+header > nav > ul{
+    display: flex;
+    align-content: space-between;
+    flex-flow: column;
+}
+main {
+    display: grid;
+    gap: 10px;
+    grid-template-rows: repeat(5, 0.2fr);
+    grid-template-columns: 1fr 0.5fr;
+}

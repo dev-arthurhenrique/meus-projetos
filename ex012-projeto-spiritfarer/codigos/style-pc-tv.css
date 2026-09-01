@@ -1,0 +1,37 @@
+section#banner {
+    height: 85vh;
+}
+/* VIDEO HISTÓRIA */
+.videoHistoria {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+}
+.videoHistoria > article#video {
+    width: 50%;
+    align-self: center;
+}
+.videoHistoria > article#historia {
+    width: 40%;
+}
+
+/* CAPTURAS */
+
+h2#h2Capturas, h2#h2Personagem {
+    padding-left: 5%;  
+    margin: 100px 0;
+}
+.print {
+    justify-content: center;
+}
+.print > img{
+    width: 30%;
+    margin: 30px;
+}
+
+/* personagem */
+
+.personagens > .cardPersonagem {
+    width: 30%;
+    
+}

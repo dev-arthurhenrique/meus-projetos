@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto-Spiritfarer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-tablets.css" media="screen and (min-width: 648px)">
+    <link rel="stylesheet" href="style-notebook.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="style-pc-tv.css" media="screen and (min-width: 1440px)"> 
+</head>
+<body>
+    <header> 
+       <section class="header">  <!-- Display flex para telas maiores-->
+           <div id="teste"> <!-- Display Flex -->
+               <img src="../imagens/spiritfarer-logos/Spiritfarer_LOGO_white_registered.png" alt="logo" id="logo">
+               <span class="material-symbols-outlined" id="burguer">menu</span>
+           </div>
+           <menu id="menu">
+            <nav id="nav">
+                <ul>
+                    <li>SOBRE</li>
+                    <li>HISTÓRIA</li>
+                    <li>CAPTURAS</li>
+                    <li>PERSONAGENS</li>
+                    <li>CRÉDITOS</li>
+                </ul>
+            </nav>
+           </menu>
+       </section>
+       <section id="banner"> <!-- Display flex-->
+        <div id="conteudoBanner">
+            <h1>SpiritFarer Landing Page</h1>
+            <a href="https://store.steampowered.com/app/972660/Spiritfarer_Edio_Farewell/" target="_blank" rel="external">Play na Steam</a>
+        </div>
+       </section>
+    </header>
+    <main>
+
+        <!-- Usando Flexbox nos dados de produção do jogo, video e história -->
+
+       <section class="dadosVideoHistoria"> <!-- Display flex-->
+
+        <!--Criando uma lista com os dados de produção do jogo -->
+
+        <article id="dados">
+            <ul class="listaDados">
+                <li>
+                    <h3>Desenvolvedor</h3> <p>Lótus® do Trovão</p>
+                </li>
+                <li>
+                    <h3>Lançamento</h3> <p>18 de agosto de 2020</p>
+                </li>
+                <li>
+                    <h3>Disponível em</h3> 
+                    <p>
+                        <a href="https://store.steampowered.com/app/972660/Spiritfarer_Edio_Farewell/" target="_blank" rel="external"><img src="../imagens/logos-redes-sociais/steam.svg" alt="steam" class="redes"></a>
+                        <a href="https://www.playstation.com/en-us/games/spiritfarer/" target="_blank" rel="external"><img src="../imagens/logos-redes-sociais/playstation.svg" alt="playstation" class="redes"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.netflix.NGP.Spiritfarer&hl=pt_BR" target="_blank" rel="external"><img src="../imagens/logos-redes-sociais/android.svg" alt="android" class="redes"></a>
+                        <a href="https://apps.apple.com/br/app/spiritfarer-edi%C3%A7%C3%A3o-netflix/id1610577424" target="_blank" rel="external"><img src="../imagens/logos-redes-sociais/apple.svg" alt="ios" class="redes"></a>
+                    </p>
+                </li>
+                <li>
+                    <h3>Idioma disponível</h3> <p>Inglês, Japonês, Francês, Alemão, Espanhol - Espanha, Coreano, Russo, <br>Chinês Simplificado, Chinês Tradicional, Português - Brasil</p>
+                </li>
+                <li>
+                    <h3>Número de jogadores</h3> <p>Single ou Multiplayer local</p>
+                </li>
+                <li>
+                    <h3>Thunder Lotus Socials</h3> 
+                    <p>
+                        <a href="https://x.com/thunderlotus" target="_blank" rel="external"><img src="../imagens/logos-redes-sociais/x.svg" alt="X" class="redes"></a>
+                        <a href="https://www.instagram.com/thunderlotus/" target="_blank" rel="external"><img src="../imagens/logos-redes-sociais/instagram.svg" alt="Instagram" class="redes"></a>
+                        <a href="#"><img src="../imagens/logos-redes-sociais/whatsapp.svg" alt="WhatsApp" class="redes"></a>
+                    </p>
+                </li>
+                <li>
+                    <h3>Contato com a Imprensa / Negócios</h3> <p><a href="mailto:press@thunderlotusgames.com" class="linkDados
+                        ">press@thunderlotusgames.com</a></p>
+                </li>
+                <li>
+                    <h3>Endereço</h3> <p>3970 rue Saint-Ambroise, Montreal, Quebec, Canadá</p>
+                </li>
+                <li>
+                    <h3>Jurídico</h3> <p><a href="Política de monetização e merchandising" class="linkDados">Política de monetização e merchandising</a><p>
+                </li>
+            </ul>
+        </article>
+
+        <!-- Video e história com Flexbox -->
+
+        <section class="videoHistoria"> 
+            <article id="video">
+               <video src="../imagens/video-spirit-farer.mp4" controls autoplay muted loop></video> 
+            </article>
+            <article id="historia">
+                <h2>Historia</h2>
+                <p>
+                   Spiritfarer é um jogo de gerenciamento aconchegante sobre morrer. Você interpreta Stella, a barqueira do falecido, uma Viajante de Espíritos. Construa um barco para explorar o mundo, depois faça amizade e cuide dos espíritos antes de finalmente libertá-los para o além. Cultive, minere, pesque, colha, cozinhe e fabrique seu caminho através de mares místicos. Junte-se à aventura como Narciso, o gato, em modo cooperativo para dois jogadores. Passe um tempo relaxante e de qualidade com seus passageiros espíritos, crie memórias duradouras e, por fim, aprenda a se despedir dos seus amigos queridos. O que você vai deixar para trás? 
+                </p>
+                <p>
+                    A Edição de Despedida de Spiritfarer® é a edição definitiva do premiado jogo de gerenciamento aconchegante sobre morrer. Ele reúne o emocionante jogo base amado por mais de 1 milhão de jogadores, junto com três grandes atualizações de conteúdo: explore um mundo expandido e faça amizade com quatro novos amigos espirituais! Veja por que os críticos chamaram Spiritfarer de um dos Melhores Jogos de 2020.
+                </p>
+                <p>
+                    As produções anteriores da Thunder Lotus, Jotun (2015) e Sundered (2017), receberam grandes elogios da imprensa e dos jogadores por seus visuais deslumbrantes e jogabilidade desafiadora. Ansioso para explorar outros gêneros de jogos e abordar temas mais maduros e uma estrutura narrativa mais rica, a Thunder Lotus trouxe o veterano diretor criativo AAA Nicolas Guérin para comandar Spiritfarer. A paixão contagiante de Guérin pelo projeto provou ser uma grande força motivadora para a equipe de desenvolvimento.
+                </p>
+                <p>
+                    Spiritfarer provou ser o lançamento de maior sucesso da Thunder Lotus até hoje, recebendo elogios da crítica e mais de 1 milhão de cópias vendidas. É vencedor de múltiplas categorias no Canadian Game Awards e já foi indicado a várias categorias no The Game Awards 2020, BAFTA Game Awards 2021, 24º D.I.C.E. Awards Anual, Independent Games Festival Awards 2021 e nos Hugo e Nebula Awards.
+                </p>
+            </article>
+        </section>
+       </section> 
+
+       <!-- Capturas de Tela -->
+
+       <h2 id="h2Capturas">Capturas de Telas</h2>
+       <section class="print"> <!-- Display Flex -->
+        <img src="../imagens/prints-gameplay/Spiritfarer SCREENSHOTS 01.png" alt="prints-gameplay" class="imagensDosPrints">
+        <img src="../imagens/prints-gameplay/Spiritfarer SCREENSHOTS 02.jpg" alt="prints-gameplay" class="imagensDosPrints">
+        <img src="../imagens/prints-gameplay/Spiritfarer SCREENSHOTS 03.png" alt="prints-gameplay" class="imagensDosPrints">
+        <img src="../imagens/prints-gameplay/Spiritfarer SCREENSHOTS 04.png" alt="prints-gameplay" class="imagensDosPrints">
+        <img src="../imagens/prints-gameplay/Spiritfarer SCREENSHOTS 05.jpg" alt="prints-gameplay" class="imagensDosPrints">
+        <img src="../imagens/prints-gameplay/Spiritfarer SCREENSHOTS 06.png" alt="prints-gameplay" class="imagensDosPrints">
+        <img src="../imagens/prints-gameplay/Spiritfarer SCREENSHOTS 07.jpg" alt="prints-gameplay" class="imagensDosPrints">
+        <img src="../imagens/prints-gameplay/Spiritfarer SCREENSHOTS 08.png" alt="prints-gameplay" class="imagensDosPrints">
+        <img src="../imagens/prints-gameplay/Spiritfarer SCREENSHOTS 09.png" alt="prints-gameplay" class="imagensDosPrints">
+        <img src="../imagens/prints-gameplay/Spiritfarer SCREENSHOTS 10.png" alt="prints-gameplay" class="imagensDosPrints">
+       </section>
+
+       <!-- Personagens -->
+        
+       <h2 id="h2Personagem">Personagens</h2>
+       <section class="personagens"> <!-- Display Flex -->
+        <div class="cardPersonagem"> <!-- Display flex-->
+            <img src="../imagens/personagens/stela.webp" alt="personagem-stella" id="stella">
+            <div class="informacoesPersonagem">
+                <h3>STELLA</h3>
+                <p>Stella é a barqueira dos Espíritos. Estuda mapas, verifica o navio, pesca e tem uma bela horta — ultimamente, não tem tido tempo para cuidar dela, então esquece a "<em>Bela Horta</em>". Tem uma ferraria, cuida de animais e, como se não bastasse, também cuida dos hóspedes — muitas vezes exigentes —, planeja o layout do hotel no barco e faz mais um monte de coisas que não é possível listar. ALGUÉM, PELO AMOR DE DEUS, SOCORRE ESSA MENINA!</p>
+            </div>
+        </div>
+
+        <div class="cardPersonagem">
+            <img src="../imagens/personagens/Daffodil.webp" alt="personagem-dafodill">
+            <div class="informacoesPersonagem">
+                <h3>DAFOODIL</h3>
+                <p>Com um nome comprometedor para línguas derivadas do português, esse gato fofo sempre... SEMPRE acompanha sua tutora, Stella, para todos os lugares. Nada em meio a ondas ruidosas, maneja uma serra para cortar árvores e... Deixa quieto. Ele tem essa bola brilhante que ajuda Stella em suas aventuras. Pelo menos, o gato ajuda, diferente desses hóspedes que só sabem dormir, reclamar e levar gaia.</p>
+            </div>
+        </div>
+
+        <div class="cardPersonagem">
+            <img src="../imagens/personagens/astrid.webp" alt="personagem-astrid">
+            <div class="informacoesPersonagem">
+                <h3>ASTRID</h3>
+                <p>Essa é uma das hóspedes. Iconic. Diva. Plena e de leque. Mesmo com o temperamento forte de velha, ainda assim, ela é bem legal e uma verdadeira companheira para toda a vida. Stella a encontrou em meio à chuva, em uma das fábricas. Astrid planejava uma Revolução Trabalhista, mas acabou levando gaia do marido, Geovanne.</p>
+            </div>
+        </div>
+
+        <div class="cardPersonagem">
+            <img src="../imagens/personagens/giovanne.webp" alt="personagem-geovanne" id="geovanne">
+            <div class="informacoesPersonagem">
+                <h3>GEOVANNE</h3>
+                <p>O rei leão. O macho alfa. Ou não. Geovanne é só alguém que está tentando de tudo para voltar com a esposa, Astrid, após alguns... bom... deslizes que o fizeram perder o casamento. O plano: caixa de bombons. Ele mesmo poderia comprar, claro, mas, como sabemos, Stella é tratada como a escrava do grupo. Sem suspense ou mistério, Astrid perdoou as traições do marido, só para, na noite seguinte, ele pegar uma desconhecida.</p>
+            </div>
+        </div>
+
+        <div class="cardPersonagem">
+            <img src="../imagens/personagens/bruce-mike.webp" alt="personagem-bruce-mike">
+            <div class="informacoesPersonagem">
+                <h3>BRUCE E MIKE</h3>
+                <p>Amigos inseparáveis, amantes de palavrões. Eles se aventuram por aí, fazendo o que bem entendem. É só isso mesmo.</p>
+            </div>
+        </div>
+
+        <div class="cardPersonagem">
+            <img src="../imagens/personagens/Beverly.webp" alt="personagem-bervely" id="bervely">
+            <div class="informacoesPersonagem">
+                <h3>BERVELY</h3>
+                <p>Após sofrer nas mãos de <em>Pennywise</em> — e de praticamente todo mundo —, Beverly levou uma vida cansativa, repleta de lembranças e feridas jamais cicatrizadas. Na velhice, alugou um pequeno apartamento nos campos de Oxbury, onde conheceu sua vizinha, Stella. Conversas fora e fofocas que, para sua surpresa, a levaram a um fim de vida tranquilo.</p>
+            </div>
+        </div>
+
+       </section>
+    </main>
+    <footer>
+        <p>&copy;Aviso Legal e Créditos: Este site é um projeto acadêmico de interface/desenvolvimento e não possui afiliação oficial com a Thunder Lotus Games. Todos os direitos autorais, marcas e artes de Spiritfarer® pertencem à Thunder Lotus Games. Assets disponibilizados por Tenderlotus.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

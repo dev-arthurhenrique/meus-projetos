@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body {
+    background-image: linear-gradient(to bottom, #000207, #010A1B);
+    display: grid;
+    grid-template: 0.5fr 5fr/ 1fr;
+    gap: 20px;
+}
+header {
+    margin: 20px 20px 0 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.128);
+    box-shadow: 0 0 15px black;
+}
+header > nav > ul {
+    display: flex;
+    flex-flow: column nowrap;
+}
+header > nav > ul > li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+header > nav > ul > li > a{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color .2s ease-in-out;
+}
+header > nav > ul > li > a:hover {
+    background-color: #0B2459;
+}
+header > nav > ul > li > a:hover::after {
+    content: attr(data-label);
+}
+header > nav > ul > li > a > svg {
+    margin-right: 20px;
+}
+header > nav > ul > li > a > svg:hover {
+    color: blue;
+}
+
+/* main */
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.128);
+    box-shadow: 0 0 15px black;
+    margin: 0px 20px 20px 20px;
+}
+main > section {
+    margin-bottom: 40px;
+    background-color: #060912;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.027);
+    transition: transform .3s ease-in-out;
+}
+main > section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.238);
+    background-color: #0E0F22;
+}
+/* section */
+h1 {
+    font-size: 1.2em;
+    margin-bottom: 60px;
+}
+
+/* section bom dia */
+.bomDia {
+    display: flex;
+    justify-content: space-between;
+}
+.destaque {
+    display: block;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #7ea0ea;
+}
+/* section mes */
+.mes > div > span {
+    font-size: 2em;
+    margin-left: 20px;
+}
+.mes > div > p {
+    margin-top: 20px;
+}
+
+/* section produtividade */
+
+.produtividade {
+    display: flex;
+    justify-content: space-between;
+}
+.produtividade p {
+    line-height: 40px;
+}
+.produtividade > svg {
+    align-self: center;
+}
+
+/* temporizador */
+.temporizador > div > button {
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.123);
+    background-color: #352A4A;
+    padding: 5px 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.171);
+}
+
+/* tarefas */
+
+.tarefas > div {
+    margin-bottom: 20px;
+}
+label:hover {
+    color: #7ea0ea;
+}
+/* atividade semanal */
+
+.atividade > .container {
+    display: flex;
+    flex-flow: row wrap;
+}
+/* atalho */
+.atalhos {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.atalhos div {
+    cursor: pointer;
+    background-color: #352A4A;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: transform .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+.atalhos div:hover {
+    transform: rotate(5deg);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.171);
+}
+/* eventos */
+
+.proximosEventos {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.status > svg{
+    display: block;
+    margin: auto;
+}
+.statusSistema {
+    display: flex;
+    justify-content: space-between;
+}

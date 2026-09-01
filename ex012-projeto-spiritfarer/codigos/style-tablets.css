@@ -1,0 +1,14 @@
+/*  */
+
+.print {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.print > img {
+    width: 45%;
+    border-radius: 15px;
+}
+.personagens > .cardPersonagem {
+    display: flex;
+}

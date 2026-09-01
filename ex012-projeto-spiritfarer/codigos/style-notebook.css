@@ -1,0 +1,62 @@
+/* NOTEBOOK */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.header > div#teste {
+    flex-flow: row;
+}
+div#teste > span {
+    display: none;
+}
+menu#menu {
+    align-self: center;
+}
+menu#menu > nav#nav > ul > li{
+    display: inline-block;
+    padding: 10px;
+}
+
+/* banner */
+
+section#banner {
+    height: 65vh;
+}
+
+/* dados */
+article {
+    margin-bottom: 100px;
+}
+article#dados > ul.listaDados {
+    columns: 2;
+    margin: auto;
+    text-align: center;
+}
+article#dados > ul.listaDados > li {
+    margin: 10px;
+}
+
+/* HISTORIA */
+
+article#historia{
+    width: 80%;
+    margin: auto;
+}
+
+/* capturas */
+
+h2#h2Capturas, h2#h2Personagem {
+    padding-left: 10%;  
+    margin: 100px 0;
+}
+
+/* PERSONAGENS */
+
+.personagens {
+    display: flex;
+    flex-flow: row wrap;
+}
+.personagens > .cardPersonagem {
+    width: 40%;
+    height: 70vh;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artflix</title>
+    <link rel="stylesheet" href="mobilefirst.css">
+</head>
+<body>
+   <header class="header">
+    <div class="h1Svg"> <!-- Display flex -->
+        <span>Artflix</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF0074" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Portifólio</a></li>
+        </ul>
+    </nav>
+   </header>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wHXRfecAu1s?si=WTBux7sPKgk6oEf3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section class="pesquisar"> <!-- Display flex -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF0074" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        <input type="text" id="inputPesquisar" placeholder="Buscar por um filme, jogo ou série">
+    </section>
+   <main> <!-- Display grid -->
+    <button id="menuFiltros"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FF0074" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-funnel-icon lucide-funnel"><path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"/></svg></svg><span>Filtros</span></button>
+    <section class="filtrosGerais">
+        <ul class="filtros">
+            <li>Gênero</li>
+            <ul class="genero">
+                <li><button id="filmes">Filmes</button></li>
+                <li><button id="Jogos">Jogos</button></li>
+                <li><button id="series">Séries</button></li>
+            </ul>
+            <li>Classificação Indicativa</li>
+            <ul class="classificacaoIndicativa">
+                <li><button id="al"><img src="imagens/AL_Borda.png" alt=""></button></li>
+                <li><button id="a10"><img src="imagens/A10_Borda.png" alt=""></button></li>
+                <li><button id="a12"><img src="imagens/A12_Borda.png" alt=""></button></li>
+                <li><button id="a14"><img src="imagens/A14_Borda.png" alt=""></button></li>
+                <li><button id="a16"><img src="imagens/A16_Borda.png" alt=""></button></li>
+                <li><button id="a18"><img src="imagens/A18_Borda.png" alt=""></button></li>
+            </ul>
+        </ul>
+    </section>
+    <h1 id="resultado"><em>''Todos''</em></h1>
+    <section class="conteudoGeral"> <!-- Display flex -->
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/kEGU1gGySIe63lyL7AnwXEw4rQn.jpg" alt=""></img>
+            <p class="nome">The Flash</p>
+            <p class="genero">Série</p>
+            <p class="classificao">
+                <img src="imagens/12_Box_Borda.png">
+            </p>
+            <p class="data">
+                7 de outubro de 2014
+            </p>
+        </div>
+        <div class="conteudo">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/lcGQaSrWkkxGuh0JJqyN2TkuNqb.jpg" alt="" id="imagem">
+            <p class="nome">Diários de um Vampiro</p>
+            <p class="genero">Série</p>
+            <p class="classificao"> 
+                <img src="imagens/14_Box_Borda.png">
+            </p>
+            <p class="data">
+                10 de setembro de 2009
+            </p>
+        </div>
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/g7ocbs1UieVybM3kypqXBfPczaL.jpg" alt=""></img>
+            <p class="nome">Beleza Verdadeira</p>
+            <p class="genero">Série</p>
+            <p class="classificao"> 
+                <img src="imagens/14_Box_Borda.png">
+            </p>
+            <p class="data">
+                9 de dezembro de 2020
+            </p>
+        </div>
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/ivYf2beO8LXYVzvqRvVR7T0z7qL.jpg" alt=""></img>
+            <p class="nome">Cara de Sapo</p>
+            <p class="genero">Filme</p>
+            <p class="classificao"> 
+                <img src="imagens/L_Box_Borda.png">
+            </p>
+            <p class="data">
+                9 de setembro de 2012
+            </p>
+        </div>
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/qrp4ExXJhbAo1lKWbfiBKn6vXAF.jpg" alt=""></img>
+            <p class="nome">My Little Pony: A Amizade é Mágica </p>
+            <p class="genero">Série</p>
+            <p class="classificao">
+                <img src="imagens/L_Box_Borda.png">
+            </p>
+            <p class="data">
+                10 de outubro de 2010
+            </p>
+        </div>
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/9iSKL0loq9dHbZZExFUd6z34pAq.jpg" alt=""></img>
+            <p class="nome">Stranger Things</p>
+            <p class="genero">Série</p>
+            <p class="classificao"> 
+                <img src="imagens/16_Box_Borda.png">
+            </p>
+            <p class="data">
+                15 de julho de 2016
+            </p>
+        </div>
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/gMTfrLvrDaD0zrhpLZ7zXIIpKfJ.jpg" alt=""></img>
+            <p class="nome">It: Bem-Vindos a Derry</p>
+            <p class="genero">Série</p>
+            <p class="classificao"> 
+                <img src="imagens/18_Box_Borda.png">
+            </p>
+            <p class="data">
+                26 de outubro de 2025
+            </p>
+        </div>
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/o4ki1gYHkP6IWNdwjHvI9vzfpuC.jpg" alt=""></img>
+            <p class="nome">Crepúsculo</p>
+            <p class="genero">Filme</p>
+            <p class="classificao">
+                <img src="imagens/12_Box_Borda.png">
+            </p>
+            <p class="data">
+                19 de dezembro de 2008
+            </p>
+        </div>
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/tiUtJXN4OZaK2PQM0q8mbbBgKS4.jpg" alt=""></img>
+            <p class="nome">Avatar Aang: O Último Mestre do Ar</p>
+            <p class="genero">Filme</p>
+            <p class="classificao">
+                <img src="imagens/12_Box_Borda.png">
+            </p>
+            <p class="data">
+                25 de Julho de 2026
+            </p>
+        </div>
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/tlWgu5Kp37C7XsgJVLmYsPKiAd6.jpg" alt=""></img>
+            <p class="nome">Os 100</p>
+            <p class="genero">Série</p>
+            <p class="classificao"> 
+                <img src="imagens/16_Box_Borda.png">
+            </p>
+            <p class="data">
+                19 de março de 2014
+            </p>
+        </div>
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/tfM1T6tAivjvy0sLwt6Y9WvlmzB.jpg" alt=""></img>
+            <p class="nome">Sonic 3: O filme</p>
+            <p class="genero">Filme</p>
+            <p class="classificao"> 
+                <img src="imagens/12_Box_Borda.png">
+            </p>
+            <p class="data">
+                25 de deezembro de 2024
+            </p>
+        </div>
+        <div class="conteudo">
+            <img id="imagem" src="https://media.themoviedb.org/t/p/w300_and_h450_face/504rKeAKejZO2ONKSikdsW7bgO8.jpg" alt=""></img>
+            <p class="nome">Death Note</p>
+            <p class="genero">Série</p>
+            <p class="classificao">
+                <img src="imagens/16_Box_Borda.png">
+            </p>
+            <p class="data">
+                3 de outubro de 2006
+            </p>
+        </div>
+    </section>
+   </main>
+</body>
+</html>

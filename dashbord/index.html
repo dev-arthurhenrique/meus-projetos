@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashbord</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 920px)">
+    <link rel="stylesheet" href="desktop-grande.css" media="screen and (min-width: 1200px)">
+</head>
+<body> <!-- Display grid -->
+    <header class="header"> 
+        <menu>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+        </menu>
+        <nav> <!-- Display flex -->
+            <ul>
+                <li>
+                    <a href="" data-label="Início">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    </a>
+                </li>
+                    <li>
+                        <a href="" data-label="Dashbord">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid-icon lucide-layout-grid"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""data-label="Gráficos">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-no-axes-combined-icon lucide-chart-no-axes-combined"><path d="M12 16v5"/><path d="M16 14.639V21"/><path d="M20 10.656V21"/><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"/><path d="M4 18.463V21"/><path d="M8 14.656V21"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-label="Calendário">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days-icon lucide-calendar-days"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M8 13h.01"/><path d="M12 13h.01"/><path d="M16 13h.01"/><path d="M8 17h.01"/><path d="M12 17h.01"/><path d="M16 17h.01"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" data-label="Pastas">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder-open-dot-icon lucide-folder-open-dot"><path d="m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2"/><circle cx="14" cy="15" r="1"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""data-label="Configurações">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"/><circle cx="12" cy="12" r="3"/></svg>
+                        </a>
+                    </li>
+            </ul>
+            <ul>
+                  <li><a href="" data-label="Modo claro">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lamp-icon lucide-lamp"><path d="M12 12v6"/><path d="M4.077 10.615A1 1 0 0 0 5 12h14a1 1 0 0 0 .923-1.385l-3.077-7.384A2 2 0 0 0 15 2H9a2 2 0 0 0-1.846 1.23Z"/><path d="M8 20a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z"/></svg>
+                  </a></li>
+                  <li><a href="" data-label="Perfil">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-user-round-icon lucide-circle-user-round"><path d="M17.925 20.056a6 6 0 0 0-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></svg>
+                  </a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main class="main"> <!-- Display flex -->
+        <section class="bomDia"> <!-- Display flex -->
+            <div>
+                <h1>Bom dia,</h1>
+                <span class="destaque">Arthur</span>
+                <p>Fique focado e faça seu melhor</p>
+            </div>
+            <div>
+                <p>07:45 PM</p>
+            </div>
+        </section>
+        <section class="mes">
+            <h1>Maio 24, 2026</h1>
+            <p class="destaque">Sábado</p>
+            <div>
+               <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud-sun-icon lucide-cloud-sun"><path d="M12 2v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="M20 12h2"/><path d="m19.07 4.93-1.41 1.41"/><path d="M15.947 12.65a4 4 0 0 0-5.925-4.128"/><path d="M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z"/></svg> 
+               <span>27 Graus</span>
+               <p>H: 31 L: 21</p>
+            </div>
+        </section>
+        <section class="produtividade"> <!-- Display flex -->
+            <div> 
+                <h1>Produtividade</h1>
+                <span class="destaque">78%</span>
+                <p>Ótimo progresso</p>
+                <div class="task">
+                    <p>Tarefas Completadas:<span>14</span></p>
+                    <p>Total de Tarefas: <span>18</span></p>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-circle-icon lucide-loader-circle"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+        </section>
+        <section class="temporizador">
+            <h1>Temporizador de foco</h1>
+            <div> <!-- Display flex -->
+                <span class="destaque">25:00</span>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play-icon lucide-play"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg>
+                    <span>Start</span>
+                </button>
+            </div>
+        </section>
+        <section class="tarefas">
+            <h1>Tarefas</h1>
+            <div>
+                <input type="checkbox" name="" id="tarefa1">
+                <label for="tarefa1">UI/UX Pesquisa</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="tarefa2">
+                <label for="tarefa2">Design Dashbord</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="tarefa3">
+                <label for="tarefa3">Rascunho do App</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="tarefa1">
+                <label for="tarefa1">Teste de Usuário</label>
+            </div>
+        </section>
+        <section>
+            <h1>Modo atual</h1>
+            <span>Focado</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="196" height="196" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-spline-icon lucide-spline"><circle cx="19" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><path d="M5 17A12 12 0 0 1 17 5"/></svg>
+            <span>Distrações: baixas</span>
+        </section>
+        <section class="atividade">
+            <h1>Atividade Semanal</h1>
+            <div class="container">
+                <div class="grafico"> <!-- Display flex -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tally1-icon lucide-tally-1"><path d="M4 4v16"/></svg>
+                    <p>SEG</p>
+                </div>
+                <div class="grafico"> <!-- Display flex -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tally1-icon lucide-tally-1"><path d="M4 4v16"/></svg>
+                    <p>TER</p>
+                </div>
+                <div class="grafico"> <!-- Display flex -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tally1-icon lucide-tally-1"><path d="M4 4v16"/></svg>
+                    <p>QUA</p>
+                </div>
+                <div class="grafico"> <!-- Display flex -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tally1-icon lucide-tally-1"><path d="M4 4v16"/></svg>
+                    <p>QUI</p>
+                </div>
+                <div class="grafico"> <!-- Display flex -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tally1-icon lucide-tally-1"><path d="M4 4v16"/></svg>
+                    <p>SEX</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1>Atalhos</h1>
+            <div class="atalhos"> <!-- Display flex -->
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notepad-text-icon lucide-notepad-text"><path d="M8 2v4"/><path d="M12 2v4"/><path d="M16 2v4"/><rect width="16" height="18" x="4" y="4" rx="2"/><path d="M8 10h6"/><path d="M8 14h8"/><path d="M8 18h5"/></svg>
+                    <p>Notas</p>
+                </div>
+                <div>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder-open-dot-icon lucide-folder-open-dot"><path d="m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2"/><circle cx="14" cy="15" r="1"/></svg>
+                    </a>
+                    <p>Pastas</p>
+                </div>
+                <div>
+                   <a href="">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music-icon lucide-music"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg> 
+                   </a>
+                   <p>Músicas</p>
+                </div>
+                <div>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days-icon lucide-calendar-days"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M8 13h.01"/><path d="M12 13h.01"/><path d="M16 13h.01"/><path d="M8 17h.01"/><path d="M12 17h.01"/><path d="M16 17h.01"/></svg>
+                    </a>
+                    <p>Calendário</p>
+                </div>
+                <div>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera-icon lucide-camera"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"/><circle cx="12" cy="13" r="3"/></svg>
+                    </a>
+                    <p>Câmera</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1>Próximos Eventos</h1>
+            <div class="proximosEventos">
+                <p>25 MAI</p>
+                <p>Projetos em andamento</p>
+            </div>
+            <hr>
+            <div class="proximosEventos">
+                <p>26 MAI</p>
+                <p>Reever Design</p>
+            </div>
+            <hr>
+            <div class="proximosEventos">
+                <p>28 MAI</p>
+                <p>Descançar pelo amor de Deus</p>
+            </div>
+            <hr>
+        </section>
+        <section class="status">
+            <h1>Status do Sistema</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24" fill="none" stroke="#7E8CB1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-circle-icon lucide-loader-circle"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+            <div class="statusSistema"> <!--display flex-->
+                <p>Storege</p>
+                <span>78%</span>
+            </div>
+            <div class="statusSistema"> <!--display flex-->
+                <p>Bateria</p>
+                <span>82%</span>
+            </div>
+            <div class="statusSistema"> <!--display flex-->
+                <p>Internet</p>
+                <span>-25%</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
