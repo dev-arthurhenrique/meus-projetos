@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+header > .h1Svg {
+    align-self: center;
+    padding-left: 30px;
+}
+#menuBurguer {
+    display: none;
+}
+header > nav > ul{
+    display: flex;
+}
+header > nav > ul > li {
+    margin-right: 40px;
+}
+iframe {
+    height: 500px;
+}
+.conteudo {
+    width: 250px;
+    margin: 10px;
+}
