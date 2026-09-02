@@ -92,6 +92,9 @@ iframe {
 iframe:hover {
     box-shadow: 0 0 15px #8556DC;
 }
+#pesquisarAlgo {
+    cursor: pointer;
+}
 main {
     display: grid;
     gap: 10px;
