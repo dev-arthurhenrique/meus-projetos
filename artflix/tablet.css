@@ -16,6 +16,22 @@ header > nav > ul{
 header > nav > ul > li {
     margin-right: 40px;
 }
+nav a {
+    position: relative;
+}
+nav a::after {
+    content: " ";
+    background-color: #8556DC;
+    width: 0%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .2s ease-in-out;
+}
+nav a:hover::after {
+    width: 150%;
+}
 iframe {
     height: 500px;
 }

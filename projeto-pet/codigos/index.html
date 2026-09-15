@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetNick</title>
+    <link rel="stylesheet" href="mobileFirst.css">
+    <link rel="stylesheet" href="notebook.css" media="screen and (min-width:720px)">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+   <header class="inicio">
+    <div class="cabecalho">
+        <menu class="menu"> <!-- Display flex -->
+            <h2>Pet<span>Nick</span></h2>
+            <button class="burguer" onclick="verificar()" id="menuBurguer">
+                <span class="linhasMenu"></span>
+                <span class="linhasMenu"></span>
+                <span class="linhasMenu"></span>
+            </button>
+        </menu>
+        <nav>
+            <a href="">Início</a>
+            <a href="">Sobre</a>
+            <a href="">Mais Projetos</a>
+            <a href="">Portifólio</a>
+            <a href="">Contato</a>
+        </nav>
+    </div>
+    <section class="sectionBanner">
+        <div class="conteudoBanner">
+            <h1>Encontre seu Pet dos sonhos aqui na PetNick</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deserunt quibusdam vitae repellendus corrupti. Quia voluptates vel eos.</p>
+            <button>Encontre seu pet</button>
+        </div>
+        <img src="../imagens/img-banner.png" alt="" class="imagemBaner">
+    </section>
+   </header> 
+   <main>
+    <section class="encontrePet">
+        <h3>Encontre seu pet</h3>
+        <h2>Pets de todos mundo precisam da sua ajuda</h2>
+        <div class="containerCards">
+            <div class="cards">
+                <div class="flip">
+                    <div class="frente"> <img src="../imagens/imagem1.jpg" alt=""></div>
+                    <div class="atras"><a href="" class="flipa">Conheça o Caramelo</a></div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="flip">
+                    <div class="frente"> <img src="../imagens/imagem2.jpg" alt=""></div>
+                    <div class="atras"><a href="" class="flipa">Conheça a Hannah</a></div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="flip">
+                    <div class="frente"> <img src="../imagens/imagem3.jpg" alt=""></div>
+                    <div class="atras"><a href="" class="flipa">Conheça o Steve</a></div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="flip">
+                    <div class="frente"> <img src="../imagens/imagem4.jpg" alt=""></div>
+                    <div class="atras"><a href="" class="flipa">ERRO. INsTáVeL</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+   </main>
+   <section class="agendeVisita">
+    <div class="antes"></div>
+    <div class="depois">
+        <form action="cadastro.php" method="post" autocomplete="off">
+           <h3>Agende uma visita</h3> 
+           <div class="inputContainer">
+            <input type="text" id="nome">
+            <label for="nome">Nome completo</label>
+           </div>
+           <div class="inputContainer">
+            <input type="text" id="nome">
+            <label for="nome">Email</label>
+           </div>
+           <div>
+            <input type="date" id="">
+           </div>
+           <button>Agendar</button>
+        </form>
+    </div>
+   </section>
+   <footer>
+    <div></div>
+   </footer>
+   <script>
+    VanillaTilt.init(document.querySelector(".sectionBanner"), {
+		max: 5,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.5
+	});
+    function verificar () {
+        const menuBurguer = document.getElementById('menuBurguer')
+        menuBurguer.classList.toggle('ativar')
+    }
+   </script>
+</body>
+</html>

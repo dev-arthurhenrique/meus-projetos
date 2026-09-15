@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.cabecalho {
+    animation: animacao2 1s;
+}
+h3 {
+    color: tomato;
+    margin-bottom: 20px;
+}
+@keyframes animacao2 {
+    0% {
+        transform: translateY(-1600px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+menu > h2 > span {
+    color: tomato;
+}
+.inicio {
+    padding: 30px;
+}
+.burguer {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 20px 0;
+}
+.linhasMenu {
+    display: block;
+    width: 30px;
+    border-radius: 10px;
+    height: 5px;
+    background-color: tomato;
+    margin: 1px;
+    transition: .4s ease-in-out;
+}
+.burguer.ativar .linhasMenu:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+    background-color: red;
+}
+.burguer.ativar .linhasMenu:nth-child(2) {
+    opacity: 0;
+}
+.burguer.ativar .linhasMenu:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+    background-color: red;
+}
+nav {
+    display: flex;
+    flex-flow: column;
+}
+nav a {
+    text-decoration: none;
+    color: #626262;
+    margin-bottom: 30px;
+}
+nav a::after {
+    display: block;
+    content: ' ';
+    width: 0;
+    height: 4px;
+    background-color: tomato;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+}
+nav a:hover {
+    color: tomato;
+}
+nav a:hover::after {
+    width: 100px;
+}
+.sectionBanner {
+    background-image: linear-gradient(45deg, tomato, rgba(255, 99, 71, 0.734));
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+    position: relative;
+    padding: 50px 50px 0 50px;
+    transform-style: preserve-3d;
+    overflow: visible;
+    margin: 200px 0;
+    
+}
+.sectionBanner  .imagemBaner {
+    transform: translate3d(0,0,100px);
+    transition: .4s ease-in-out;
+}
+.conteudoBanner {
+    animation: animacao 1s;
+    width: 200px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.688);
+    font-size: 1.1em;
+}
+.conteudoBanner > p {
+    margin: 20px 0;
+}
+.conteudoBanner > button {
+    padding: 10px;
+    border-radius: 15px;
+    border: 0;
+    margin: 40px 0;
+    font-family: cursive;
+    font-size: 1.2em;
+    color: tomato;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.588);
+    cursor: pointer;
+}
+.imagemBaner {
+    width: 100%;
+}
+@keyframes animacao {
+    0% {
+        transform: translateX(-400px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+main .encontrePet {
+    padding: 30px;
+}
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 0;
+    
+}
+.cards {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 20px;
+    
+}
+.cards:hover .flip {
+    transform: rotateY(180deg);
+}
+.flip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+    transform-style: preserve-3d;
+}
+.frente, .atras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.frente > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.atras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: tomato;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+}
+.atras .flipa {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.318);
+    animation: animacaoflipa 2s linear infinite;
+}
+.atras .flipa:hover {
+    background-color: white;
+    color: tomato;
+}
+@keyframes animacaoflipa {
+    0% {
+        transform: translateY(0) rotateY(-20deg);
+    }
+    50% {
+        transform: translateY(-5px) rotateY(20deg);
+    }
+    100% {
+        transform: translateY(0) rotateY(-20deg);
+    }
+}
+
+/* agendar visita */
+.agendeVisita {
+    position: relative;
+    overflow: hidden;
+}
+.agendeVisita .antes {
+    background-image: url(../imagens/imagem1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+}
+.agendeVisita .depois {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.agendeVisita .depois > form > h3 {
+    color: rgb(234, 54, 22);
+    text-shadow: 1px 1px 1px black;
+    font-size: 2em;
+}
+.agendeVisita .depois > form > .inputContainer {
+    position: relative;
+}
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    min-width: 350px;
+    max-width: 800px;
+}
+.agendeVisita .depois > form > .inputContainer > label {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    transition: .4s ease-in-out;
+}
+.agendeVisita .depois > form > .inputContainer > input:focus {
+    border-color: transparent; 
+    outline: none;
+}
+.agendeVisita .depois > form > .inputContainer > input:focus + label {
+    color: tomato;
+    top: -10px;
+    background-color: transparent;
+    padding: 0 10px;
+}
+.agendeVisita button {
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    color: tomato;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: .4s ease-in-out;
+}
+.agendeVisita button:hover {
+    color: black;
+    background-color: tomato;
+}
+.agendeVisita:hover .depois {
+    left: 0;
+}

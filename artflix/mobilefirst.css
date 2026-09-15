@@ -139,8 +139,7 @@ ul{
 }
 .filtrosGerais > .filtros > .genero{
     display: flex;
-    justify-content: space-evenly;
-    margin: 30px 0;
+    flex-flow: wrap;
 }
 .genero > li > button {
     padding: 10px;
@@ -150,6 +149,7 @@ ul{
     color: white;
     cursor: pointer;
     transition: transform .4s ease-in-out, background-color .4s ease-in-out, color .4s ease-in-out;
+    margin: 10px;
 }
 .genero > li > button:hover {
     background-color: white;
