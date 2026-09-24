@@ -52,7 +52,7 @@ body.ativo {
 .conteudo {
     display: flex;
     background-color: #3a3a3a;
-    width: 200px;
+    width: 150px;
     align-items: center;
     border-radius: 10px;
     margin: 5px;
