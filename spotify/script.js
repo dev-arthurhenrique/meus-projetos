@@ -1,7 +1,7 @@
 const listaConteudosAssistidos = [
     {img:'imagens/celeste.jpg', nome: 'Nome da música', categotia: 'Musica'},
     {img:'imagens/rift.jpg', nome: 'Nome da música', categotia: 'Musica'},
-    {img:'imagens/hollow.jpg', nome: 'Nome da música e autor', categotia: 'Musica'},
+    {img:'imagens/hollow.jpg', nome: 'Nome da música', categotia: 'Musica'},
     {img:'imagens/artista-luan-santana.jpg', nome: 'Nome da música', categotia: 'Musica'},
     {img:'imagens/fisolofatos.jpg', nome: 'Nome da música', categotia: 'Podcast'},
     {img:'imagens/audiolivro.jpg', nome: 'Nome da música', categotia: 'Podcast'},
