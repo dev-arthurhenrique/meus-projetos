@@ -1,12 +1,12 @@
 const listaConteudosAssistidos = [
-    {img:'imagens/celeste.jpg', nome: 'Nome da música e autor', categotia: 'Musica'},
-    {img:'imagens/rift.jpg', nome: 'Nome da música e autor', categotia: 'Musica'},
+    {img:'imagens/celeste.jpg', nome: 'Nome da música', categotia: 'Musica'},
+    {img:'imagens/rift.jpg', nome: 'Nome da música', categotia: 'Musica'},
     {img:'imagens/hollow.jpg', nome: 'Nome da música e autor', categotia: 'Musica'},
-    {img:'imagens/artista-luan-santana.jpg', nome: 'Nome da música e autor', categotia: 'Musica'},
-    {img:'imagens/fisolofatos.jpg', nome: 'Nome da música e autor', categotia: 'Podcast'},
-    {img:'imagens/audiolivro.jpg', nome: 'Nome da música e autor', categotia: 'Podcast'},
-    {img:'imagens/now.jpg', nome: 'Nome da música e autor', categotia: 'Musica'},
-    {img:'imagens/ursinho.jpg', nome: 'Nome da música e autor', categotia: 'Musica'},
+    {img:'imagens/artista-luan-santana.jpg', nome: 'Nome da música', categotia: 'Musica'},
+    {img:'imagens/fisolofatos.jpg', nome: 'Nome da música', categotia: 'Podcast'},
+    {img:'imagens/audiolivro.jpg', nome: 'Nome da música', categotia: 'Podcast'},
+    {img:'imagens/now.jpg', nome: 'Nome da música', categotia: 'Musica'},
+    {img:'imagens/ursinho.jpg', nome: 'Nome da música', categotia: 'Musica'},
 ]
 const respostaConteudoAssistido = document.getElementById('respostaConteudoAssistido')
 // forEach que vai varrer todos os objetos
@@ -14,18 +14,18 @@ const respostaConteudoAssistido = document.getElementById('respostaConteudoAssis
 const renderizarConteudosAssistidos = (conteudo) => {
     conteudo.forEach(objeto => {
         const card = document.createElement('div')
-        card.classList.add = 'conteudo'
+        card.classList.add('conteudo')
 
         const imagemConteudo = document.createElement('img')
-        imagemConteudo.classList.add = 'imagemConteudo'
+        imagemConteudo.classList.add('imagemConteudo')
         imagemConteudo.src = objeto.img
 
         const textoAssistido = document.createElement('p')
-        textoAssistido.classList.add = 'textoAssistido'
+        textoAssistido.classList.add('textoAssistido')
         textoAssistido.textContent = objeto.nome
 
         const categoria = document.createElement('p')
-        categoria.classList.add = 'categoria'
+        categoria.classList.add('categoria')
         categoria.textContent = objeto.categotia
 
         card.appendChild(imagemConteudo)
