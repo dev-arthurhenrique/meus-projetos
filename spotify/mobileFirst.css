@@ -49,11 +49,12 @@ body.ativo {
     flex-flow: wrap;
     justify-content: flex-start;
     margin: 30px 0;
+    width: 100%;
 }
 .conteudo {
     display: flex;
     background-color: #3a3a3a;
-    width: 200px;
+    width: 150px;
     align-items: center;
     border-radius: 10px;
     margin: 5px;
@@ -65,7 +66,7 @@ body.ativo {
 }
 .imagemConteudo {
     border-radius: 10px;
-    width: 50px;
+    width: 30px;
 }
 .conteudo p{
     margin: 5px;
