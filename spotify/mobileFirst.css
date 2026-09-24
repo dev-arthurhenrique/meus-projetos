@@ -1,0 +1,11 @@
+img {
+    width: 50px;
+}
+.imagemLateral {
+    width: 300px;
+}
+.imagensLaterais {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
