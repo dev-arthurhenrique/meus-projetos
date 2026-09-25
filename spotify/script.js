@@ -86,3 +86,18 @@ const btnClick = (btn) => {
     content.classList.add('ativo')
     
 }
+
+// script para biblioteca
+
+const grip = document.getElementById('grip')
+grip.addEventListener('click', () => btnGrip ())
+
+const btnGrip = () => {
+    const minhaBiblioteca = document.querySelector('.minhaBiblioteca')
+    minhaBiblioteca.classList.toggle('ativoGrip')
+    if (minhaBiblioteca.classList.contains('ativoGrip')) {
+        grip.setAttribute('fill', 'white')
+    } else {
+        grip.setAttribute('fill', 'none')
+    }
+}
