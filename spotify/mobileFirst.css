@@ -7,8 +7,8 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: #121212;
     color: white;
+    background-color: #121212;
 }
 body.ativo {
     background-color: white;
@@ -18,12 +18,26 @@ body.ativo {
     display: grid;
     grid-template: 10fr 0.1fr / 100%;
     gap: 20px;
-}
-#main {
-    width: 100%;
-    padding: 10px;
+    background-color: #121212;
+    transition: .4s ease-in-out;
     
+}
+.container.noDark {
+    background-color: #b9b9bd;
+    color: black;
+}
+.container.noDark .imagensLaterais {
+    scrollbar-color: white gray;
+}
+.principal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
     grid-area: 1 / 1 / 2 / 1;
+}
+.principal.ativo {
+    display: block;
 }
 #main nav {
     margin: 20px 0;
@@ -52,8 +66,6 @@ body.ativo {
     width: 100%;
 }
 
-
-
 .conteudo {
     display: flex;
     background-color: #3a3a3a;
@@ -69,11 +81,11 @@ body.ativo {
 }
 .imagemConteudo {
     border-radius: 10px;
-    width: 30px;
+    width: 40px;
 }
 .conteudo p{
     margin: 5px;
-    font-size: .8em;
+    font-size: 0.9em;
 }
 
 /* conteudo relacionado a imagens laterais */
@@ -156,4 +168,92 @@ iframe:hover {
     border: 0;
     color: white;
     background-color: transparent;
+}
+
+ /*Seção de buscar */
+
+#buscar h1{
+    margin: 30px 0;
+}
+#buscar .caixaPesquisar {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 1px;
+    box-shadow: 0 0 10px black;
+}
+#buscar input {
+    font-size: 1em;
+    margin-left: 10px;
+    width: 100%;
+    border: 0;
+}
+#buscar input:focus {
+    outline: none;
+}
+#buscar .listaCardsAbaPesquisar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+}
+#buscar .listaCardsAbaPesquisar .cardAbaPesquisar {
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 150px;
+    justify-content: space-between;
+    transition: .4s ease-in-out;
+}
+#buscar .listaCardsAbaPesquisar .cardAbaPesquisar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.752);
+    cursor: pointer;
+}
+#buscar .listaCardsAbaPesquisar #card1 {
+    background-color: rgb(197, 3, 197);
+}
+#buscar .listaCardsAbaPesquisar #card2 {
+    background-color: darkolivegreen;
+}
+#buscar .listaCardsAbaPesquisar #card3 {
+    background-color: darkorange;
+}
+#buscar .listaCardsAbaPesquisar #card4 {
+    background-color: rgb(86, 86, 240);
+}
+#buscar .listaCardsAbaPesquisar #card5 {
+    background-color: rgb(5, 181, 5);
+}
+#buscar .listaCardsAbaPesquisar #card6 {
+    background-color: rgb(250, 167, 65);
+}
+#buscar .listaCardsAbaPesquisar #card7 {
+    background-color: rgb(95, 3, 95);
+}
+#buscar .listaCardsAbaPesquisar #card8 {
+    background-color: rgb(197, 3, 197);
+}
+#buscar .listaCardsAbaPesquisar #card9 {
+    background-color: rgb(41, 41, 41);
+}
+#buscar .listaCardsAbaPesquisar #card10 {
+    background-color: rgb(236, 92, 92);
+}
+#buscar .listaCardsAbaPesquisar #card11 {
+    background-color: rgb(197, 3, 197);
+}
+#buscar .listaCardsAbaPesquisar #card12 {
+    background-color: black;
+}
+#buscar .listaCardsAbaPesquisar .cardAbaPesquisar .imagemCard {
+    width: 70px;
+    height: 70px;
+    transform: rotate(30deg) translate(15px, 10px);
+    border-radius: 10px;
 }

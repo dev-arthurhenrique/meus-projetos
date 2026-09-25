@@ -10,7 +10,7 @@
 <body>
    <div class="container">
        <main id="main">
-        <section class="inicio" id="home">
+        <section class="principal" id="home">
             <nav>
                 <ul>
                     <li><button class="botoesHome" id="tudo">Tudo</button></li>
@@ -201,12 +201,73 @@
                     <div class="imagensLaterais">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/qH_E3BYmLdM?si=u45ihRz7yiz3Pedq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/2Ak2cxZjwN4RFr2B9PxRNq/video?utm_source=generator&si=b694e03b4227480e" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/61zs0aCHOeTjiq68Gtgbyr?utm_source=generator&si=03b71d502d1e47e2" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/61zs0aCHOeTjiq68Gtgbyr?utm_source=generator&si=03b71d502d1e47e2" width="100%" height="852" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/2ncqU51EcldjbXZwUIEuwy/video?utm_source=generator&theme=0&si=b7e1fe48923e4279" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Seção de buscar -->
+
+        <section class="principal ativo" id="buscar">
+            <h1>Buscar</h1>
+            <div class="caixaPesquisar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search preview-icon"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg> 
+              <input type="text" id="inputBuscar" placeholder="O que você quer ouvir?"> 
+            </div>
+            <div class="listaCardsAbaPesquisar">
+                <div class="cardAbaPesquisar" id="card1">
+                    <span class="nomeCard">Música</span>
+                    <img src="imagens/rift.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card2">
+                    <span class="nomeCard">Podcasts</span>
+                    <img src="imagens/fisolofatos.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card3">
+                    <span class="nomeCard">Brasil</span>
+                    <img src="imagens/artista-luan-santana.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card4">
+                    <span class="nomeCard">Games</span>
+                    <img src="imagens/undertale.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card5">
+                    <span class="nomeCard">Pop</span>
+                    <img src="imagens/album-hit-me.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card6">
+                    <span class="nomeCard">Eletrônica</span>
+                    <img src="imagens/album-vida-loka.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card7">
+                    <span class="nomeCard">Lofi</span>
+                    <img src="imagens/album-white-noise.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card8">
+                    <span class="nomeCard">Olivia</span>
+                    <img src="imagens/olivia.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card9">
+                    <span class="nomeCard">Audiolivro</span>
+                    <img src="imagens/audiolivro.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card10">
+                    <span class="nomeCard">Bieber Anos 2010</span>
+                    <img src="imagens/bieber.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card11">
+                    <span class="nomeCard">Now United: Antigas</span>
+                    <img src="imagens/now.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+                <div class="cardAbaPesquisar" id="card12">
+                    <span class="nomeCard">Soundtracker</span>
+                    <img src="imagens/hollow.jpg" alt="imagemCard" class="imagemCard">
+                </div>
+            </div>
+        </section>
+
        </main>
        <nav id="nav">
         <ul>
@@ -222,7 +283,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library-big preview-icon"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18"/><path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>
                 <span>Biblioteca</span>
             </button></li>
-            <li><button class="botoes" data-id="tema">
+            <li><button id="tema">
                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lamp-desk preview-icon"><path d="M10.293 2.293a1 1 0 0 1 1.414 0l2.5 2.5 5.994 1.227a1 1 0 0 1 .506 1.687l-7 7a1 1 0 0 1-1.687-.506l-1.227-5.994-2.5-2.5a1 1 0 0 1 0-1.414z"/><path d="m14.207 4.793-3.414 3.414"/><path d="M3 20a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="m9.086 6.5-4.793 4.793a1 1 0 0 0-.18 1.17L7 18"/></svg>
                <span>Tema</span>
             </button></li>

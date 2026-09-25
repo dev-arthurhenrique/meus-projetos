@@ -63,3 +63,26 @@ const btnTudo = () => {
     respostaConteudoAssistido.innerHTML = ''
     renderizarConteudosAssistidos(listaConteudosAssistidos)
 } 
+// script modo dark or claro
+
+const tema = document.getElementById('tema')
+tema.addEventListener('click', () => btnTema ())
+
+const btnTema = () => {
+    const container = document.querySelector('.container')
+    container.classList.toggle('noDark')
+}
+
+// script das abas inicio, buscar e biblioteca
+
+const botoes = document.querySelectorAll('.botoes')
+botoes.forEach(btn => btn.addEventListener('click', () => btnClick (btn)))
+
+const btnClick = (btn) => {
+    const principal = document.querySelectorAll('.principal')
+    principal.forEach(prin => prin.classList.remove('ativo'))
+    prin = btn.getAttribute('data-id')
+    const content = document.getElementById(prin)
+    content.classList.add('ativo')
+    
+}
