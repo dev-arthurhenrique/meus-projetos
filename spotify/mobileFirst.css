@@ -16,13 +16,13 @@ body.ativo {
 }
 .container {
     display: grid;
-    grid-template: 10fr 1fr / 100%;
+    grid-template: 10fr 0.1fr / 100%;
     gap: 20px;
 }
 #main {
     width: 100%;
     padding: 10px;
-    border: 3px solid orange;
+    
     grid-area: 1 / 1 / 2 / 1;
 }
 #main nav {
@@ -121,7 +121,38 @@ body.ativo {
     opacity: 1;
     top: 120px;
 }
+iframe {
+    margin: 50px 10px;
+    width: 700px;
+    height: 200px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+iframe:hover {
+    transform: scale(1.2);
+}
 #nav {
     grid-area: 2 / 1 / -1 / 1;
-    border: 3px solid orange;
+    
+    position: fixed;
+    bottom: 1px;
+    padding: 10px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.518), black);
+}
+#nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+#nav button {
+    cursor: pointer;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border: 0;
+    color: white;
+    background-color: transparent;
 }
