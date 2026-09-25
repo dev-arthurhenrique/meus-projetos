@@ -149,6 +149,7 @@ iframe:hover {
     cursor: pointer;
     display: flex;
     flex-flow: column;
+    gap: 5px;
     justify-content: center;
     align-items: center;
     width: 100px;
