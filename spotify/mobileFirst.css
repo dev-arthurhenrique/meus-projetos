@@ -51,6 +51,9 @@ body.ativo {
     margin: 30px 0;
     width: 100%;
 }
+
+
+
 .conteudo {
     display: flex;
     background-color: #3a3a3a;
@@ -72,14 +75,52 @@ body.ativo {
     margin: 5px;
     font-size: .8em;
 }
-.imagemLateral {
-    width: 300px;
-}
+
+/* conteudo relacionado a imagens laterais */
+
 .imagensLaterais {
     display: flex;
     overflow-x: auto;
+    scrollbar-color: #555555 #202020;
+    scrollbar-width: thin;
+    margin: 50px 0;
+    cursor: pointer;
+}
+.imagemLateral {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0px;
+}
+.imagemLateral:hover {
+    background-color: #3a3a3a;
 }
 
+/* musicas */
+
+.musicasPodcasts {
+    margin: 50px 0;
+}
+.imagemNomeMusica {
+    position: relative;
+}
+.botaoPlay {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    background-color: #1ED760;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    top: 130px;
+    left: 120px;
+    transition: .4s ease-in-out;
+}
+.imagemNomeMusica:hover .botaoPlay{
+    opacity: 1;
+    top: 120px;
+}
 #nav {
     grid-area: 2 / 1 / -1 / 1;
     border: 3px solid orange;
