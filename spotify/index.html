@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>spotify</title>
-    <script async src="script.js"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="mobileFirst.css">
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="dasktop.css" media="screen and (min-width: 1200px)">
 </head>
 <body>
    <div class="container">
-       <main id="main">
-        <section class="principal" id="home">
+       <section class="adiconarMusicaLista">
+        <span id="botaoExpandirDiminuir">|-></span>
+        <p>Lista Musicas</p>
+        <div class="musicasAdicionadasLista">
+            <div class="musicasAdd">
+                <img src="imagens/celeste.jpg" alt="">
+                <span class="textoAddLista">Celeste</span>
+            </div>
+            <div class="musicasAdd">
+                <img src="imagens/rift.jpg" alt="">
+                <span class="textoAddLista">RIFT</span>
+            </div>
+       </section>
+       <main id="main">        
+        <section class="principal ativo" id="home">
             <nav>
                 <ul>
                     <li><button class="botoesHome" id="tudo">Tudo</button></li>
@@ -272,7 +287,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/qH_E3BYmLdM?si=u45ihRz7yiz3Pedq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
-        <section class="principal ativo" id="biblioteca">
+        <section class="principal" id="biblioteca">
             <h1>Sua Biblioteca</h1>
             <svg id="grip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid preview-icon"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
             <div class="minhaBiblioteca">
@@ -295,6 +310,89 @@
             </div>
         </section>
        </main>
+       <section class="mostrarMusica">
+        <div class="mostrar">
+            <span class="spanMostrarMusica">Hollow Knight (Original SoundTrack)</span>
+            <img src="imagens/hollow.jpg" alt="" class="imagemMostrarMusica">
+            <span class="nomeMusicaMostrada">Greenpath</span>
+            <div class="sobreArtista">
+             <img src="imagens/hollow.jpg" alt="" class="imagemNomeArtista">
+             <p class="textoSobreArtista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus magni nobis libero, repellendus explicabo assumenda reiciendis iusto, ducimus voluptatum sunt culpa? Perspiciatis voluptatibus odit accusantium! Quaerat adipisci aliquid ullam!</p>
+             <a href="#" class="linkSeguir">Seguir Artista</a>
+            </div>
+        </div>
+        <div class="mostrar">
+            <span class="spanMostrarMusica">Hollow Knight (Original SoundTrack)</span>
+            <img src="imagens/hollow.jpg" alt="" class="imagemMostrarMusica">
+            <span class="nomeMusicaMostrada">Greenpath</span>
+            <div class="sobreArtista">
+             <img src="imagens/hollow.jpg" alt="" class="imagemNomeArtista">
+             <p class="textoSobreArtista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus magni nobis libero, repellendus explicabo assumenda reiciendis iusto, ducimus voluptatum sunt culpa? Perspiciatis voluptatibus odit accusantium! Quaerat adipisci aliquid ullam!</p>
+             <a href="#" class="linkSeguir">Seguir Artista</a>
+            </div>
+        </div>
+        <div class="mostrar">
+            <span class="spanMostrarMusica">Hollow Knight (Original SoundTrack)</span>
+            <img src="imagens/hollow.jpg" alt="" class="imagemMostrarMusica">
+            <span class="nomeMusicaMostrada">Greenpath</span>
+            <div class="sobreArtista">
+             <img src="imagens/hollow.jpg" alt="" class="imagemNomeArtista">
+             <p class="textoSobreArtista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus magni nobis libero, repellendus explicabo assumenda reiciendis iusto, ducimus voluptatum sunt culpa? Perspiciatis voluptatibus odit accusantium! Quaerat adipisci aliquid ullam!</p>
+             <a href="#" class="linkSeguir">Seguir Artista</a>
+            </div>
+        </div>
+        <div class="mostrar">
+            <span class="spanMostrarMusica">Hollow Knight (Original SoundTrack)</span>
+            <img src="imagens/hollow.jpg" alt="" class="imagemMostrarMusica">
+            <span class="nomeMusicaMostrada">Greenpath</span>
+            <div class="sobreArtista">
+             <img src="imagens/hollow.jpg" alt="" class="imagemNomeArtista">
+             <p class="textoSobreArtista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus magni nobis libero, repellendus explicabo assumenda reiciendis iusto, ducimus voluptatum sunt culpa? Perspiciatis voluptatibus odit accusantium! Quaerat adipisci aliquid ullam!</p>
+             <a href="#" class="linkSeguir">Seguir Artista</a>
+            </div>
+        </div>
+        <div class="mostrar">
+            <span class="spanMostrarMusica">Hollow Knight (Original SoundTrack)</span>
+            <img src="imagens/hollow.jpg" alt="" class="imagemMostrarMusica">
+            <span class="nomeMusicaMostrada">Greenpath</span>
+            <div class="sobreArtista">
+             <img src="imagens/hollow.jpg" alt="" class="imagemNomeArtista">
+             <p class="textoSobreArtista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus magni nobis libero, repellendus explicabo assumenda reiciendis iusto, ducimus voluptatum sunt culpa? Perspiciatis voluptatibus odit accusantium! Quaerat adipisci aliquid ullam!</p>
+             <a href="#" class="linkSeguir">Seguir Artista</a>
+            </div>
+        </div>
+        <div class="mostrar">
+            <span class="spanMostrarMusica">Hollow Knight (Original SoundTrack)</span>
+            <img src="imagens/hollow.jpg" alt="" class="imagemMostrarMusica">
+            <span class="nomeMusicaMostrada">Greenpath</span>
+            <div class="sobreArtista">
+             <img src="imagens/hollow.jpg" alt="" class="imagemNomeArtista">
+             <p class="textoSobreArtista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus magni nobis libero, repellendus explicabo assumenda reiciendis iusto, ducimus voluptatum sunt culpa? Perspiciatis voluptatibus odit accusantium! Quaerat adipisci aliquid ullam!</p>
+             <a href="#" class="linkSeguir">Seguir Artista</a>
+            </div>
+        </div>
+        <div class="mostrar">
+            <span class="spanMostrarMusica">Hollow Knight (Original SoundTrack)</span>
+            <img src="imagens/hollow.jpg" alt="" class="imagemMostrarMusica">
+            <span class="nomeMusicaMostrada">Greenpath</span>
+            <div class="sobreArtista">
+             <img src="imagens/hollow.jpg" alt="" class="imagemNomeArtista">
+             <p class="textoSobreArtista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus magni nobis libero, repellendus explicabo assumenda reiciendis iusto, ducimus voluptatum sunt culpa? Perspiciatis voluptatibus odit accusantium! Quaerat adipisci aliquid ullam!</p>
+             <a href="#" class="linkSeguir">Seguir Artista</a>
+            </div>
+        </div>
+        <div class="mostrar">
+            <span class="spanMostrarMusica">Hollow Knight (Original SoundTrack)</span>
+            <img src="imagens/hollow.jpg" alt="" class="imagemMostrarMusica">
+            <span class="nomeMusicaMostrada">Greenpath</span>
+            <div class="sobreArtista">
+             <img src="imagens/hollow.jpg" alt="" class="imagemNomeArtista">
+             <p class="textoSobreArtista">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus magni nobis libero, repellendus explicabo assumenda reiciendis iusto, ducimus voluptatum sunt culpa? Perspiciatis voluptatibus odit accusantium! Quaerat adipisci aliquid ullam!</p>
+             <a href="#" class="linkSeguir">Seguir Artista</a>
+            </div>
+        </div>
+        
+       </section>
        <nav id="nav">
         <ul>
             <li><button class="botoes" data-id="home">

@@ -17,7 +17,7 @@ body.ativo {
 .container {
     display: grid;
     grid-template: 10fr 0.1fr / 100%;
-    gap: 20px;
+    gap: 2px;
     background-color: #121212;
     transition: .4s ease-in-out;
 }
@@ -293,4 +293,7 @@ iframe:hover {
 }
 .conteudoBiblioteca:hover {
     background-color: #555555;
+}
+.mostrarMusica, .adiconarMusicaLista {
+    display: none;
 }

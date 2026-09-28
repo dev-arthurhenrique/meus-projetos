@@ -101,3 +101,18 @@ const btnGrip = () => {
         grip.setAttribute('fill', 'none')
     }
 }
+
+// script para botao de expansão barra lateral
+
+const botaoExpandirDiminuir = document.getElementById('botaoExpandirDiminuir')
+botaoExpandirDiminuir.addEventListener('click', () => btnExpandir ())
+
+const btnExpandir = () => {
+    const adiconarMusicaLista = document.querySelector('.adiconarMusicaLista')
+    adiconarMusicaLista.classList.toggle('ativoAdicionar')
+    if (adiconarMusicaLista.classList.contains('ativoAdicionar')) {
+        botaoExpandirDiminuir.textContent = '<-|'
+    } else {
+        botaoExpandirDiminuir.textContent = '|->'
+    }
+}
