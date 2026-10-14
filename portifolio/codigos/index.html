@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="css/mobile-first.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Arthur Henrique</h1>
+            <button class="btnMenu" aria-label="Abrir Menu">=</button>
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="sobre">Sobre</a></li>
+                    <li><a href="skills">Skills</a></li>
+                    <li><a href="projetos">Projetos</a></li>
+                    <li><a href="contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner">
+            <h1>Desenvolvedor FrontEnd</h1>
+            <img src="../imagens/perfil.jpg" alt="imagem-banner" class="imagemBanner">
+            <h1>Transformando Ideias em aplicações otimizadas e responsivas</h1>
+            <div class="linksRedesSociais">
+                <a href="https://www.linkedin.com/feed/" class="botaoRedeSocial" target="_blank">Linkedin</a>
+                <a href="https://github.com/repos" class="botaoRedeSocial" target="_blank">Github</a>
+            </div>
+        </section>
+        <main>
+            <section class="sobre">
+                <h2 class="subtitulo">Sobre Mim</h2>
+                <p class="conteudoSubtitulo">Olá, sou o Arthur. Sou desenvolvedor Front-End e estudante de Ciência da Computação. Gosto de criar páginas web modernas, limpas e interativas usando HTML, CSS e JavaScript. Seja bem-vindo ao meu portfólio!</p>
+            </section>
+            <section class="skills">
+                <h2 class="subtitulo">Minhas skills</h2>
+                <ul>
+                    <li class="conteudoSubtitulo listaSkills">
+                        <div class="accordeon">
+                            <h3>HTML</h3>
+                            <button class="btnAccordion"><img src="../imagens/chevron-down.svg" alt="botaoSetaBaixo"></button>
+                        </div>
+                        <p class="conteudoQueSomeEAparece">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias commodi tenetur animi sequi illo, aperiam mollitia quasi et voluptas ipsum blanditiis suscipit nam voluptatem earum ab modi distinctio provident libero.</p>
+                    </li>
+                    <li class="conteudoSubtitulo listaSkills">
+                        <div class="accordeon">
+                            <h3>CSS</h3>
+                            <button class="btnAccordion"><img src="../imagens/chevron-down.svg" alt="botaoSetaBaixo"></button>
+                        </div>
+                        <p class="conteudoQueSomeEAparece">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias commodi tenetur animi sequi illo, aperiam mollitia quasi et voluptas ipsum blanditiis suscipit nam voluptatem earum ab modi distinctio provident libero.</p>
+                    </li>
+                    <li class="conteudoSubtitulo listaSkills">
+                        <div class="accordeon">
+                            <h3>JavaScript</h3>
+                            <button class="btnAccordion"><img src="../imagens/chevron-down.svg" alt="botaoSetaBaixo"></button>
+                        </div>
+                        <p class="conteudoQueSomeEAparece">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias commodi tenetur animi sequi illo, aperiam mollitia quasi et voluptas ipsum blanditiis suscipit nam voluptatem earum ab modi distinctio provident libero.</p>
+                    </li>
+                </ul>
+            </section>
+            <h2 class="subtitulo">Meus Projetos</h2>
+            <section class="projetos">
+            
+                <a class="projeto" href="#">
+                    <img src="../imagens/perfil.jpg" alt="imagemProjeto">
+                    <h3>Projeto x</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit accusantium iusto, earum accusamus nulla deleniti dolores officiis eos recusandae odio omnis, ea necessitatibus.</p>
+                </a>
+                <a class="projeto" href="#">
+                    <img src="../imagens/perfil.jpg" alt="imagemProjeto">
+                    <h3>Projeto x</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit accusantium iusto, earum accusamus nulla deleniti dolores officiis eos recusandae odio omnis, ea necessitatibus.</p>
+                </a>
+                <a class="projeto" href="#">
+                    <img src="../imagens/perfil.jpg" alt="imagemProjeto">
+                    <h3>Projeto x</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit accusantium iusto, earum accusamus nulla deleniti dolores officiis eos recusandae odio omnis, ea necessitatibus.</p>
+                </a>
+                <a class="projeto projetoDesaparece" href="#">
+                    <img src="../imagens/perfil.jpg" alt="imagemProjeto">
+                    <h3>Projeto x</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit accusantium iusto, earum accusamus nulla deleniti dolores officiis eos recusandae odio omnis, ea necessitatibus.</p>
+                </a>
+                <a class="projeto projetoDesaparece" href="#">
+                    <img src="../imagens/perfil.jpg" alt="imagemProjeto">
+                    <h3>Projeto x</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit accusantium iusto, earum accusamus nulla deleniti dolores officiis eos recusandae odio omnis, ea necessitatibus.</p>
+                </a>
+                <a class="projeto projetoDesaparece" href="#">
+                    <img src="../imagens/perfil.jpg" alt="imagemProjeto">
+                    <h3>Projeto x</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit accusantium iusto, earum accusamus nulla deleniti dolores officiis eos recusandae odio omnis, ea necessitatibus.</p>
+                </a>
+                <button id="verMais">Ver mais</button>
+            </section>
+            <section class="contato">
+                <h2 class="subtitulo">Contato</h2>
+                <form action="cadastro.php" method="post" class="formulario"> 
+                   <div class="inputContato">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                   </div>
+                   <div class="inputContato">
+                    <label for="nome">Email</label>
+                    <input type="email" id="email">
+                   </div>
+                   <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <span id="footer">Esse Projeto foi desenvolvido por Arthur Henrique</span>
+        </footer>
+    </div>
+
+    <script src="js/menu-modal.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>

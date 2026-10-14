@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #141414;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.container {
+    overflow: hidden;
+}
+
+/* configurando o header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+h1, .btnMenu {
+    padding: 15px;
+} 
+.btnMenu {
+    cursor: pointer;
+    font-size: 2em;
+}
+nav {
+   position: absolute; 
+   width: 100%;
+   background-color: #1a1a1a;
+   transform: translate(100%, 19%); 
+   transition: .4s ease-in-out;
+   opacity: 0;
+   top: -155%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    transition: .4s ease-in-out;
+}
+nav a:hover {
+    color: black;
+}
+nav.menuAtivo {
+    transform: translate(0,19%);
+    padding: 20px;
+    opacity: 1;
+}
+
+/* configurando seção banner */
+
+.banner {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 150px 0;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+.imagemBanner {
+    border-radius: 10px;
+    width: 350px;
+}
+.imagemBanner:hover {
+    box-shadow: 0 0 10px white;
+}
+.linksRedesSociais {
+    display: flex;
+    gap: 40px;
+    font-size: 1.3em;
+}
+.linksRedesSociais a {
+    color: white;
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+}
+.linksRedesSociais a:hover {
+    background-color: #474747;
+    transform: translateY(-5px);
+    
+}
+
+/* configurando o main */
+
+main {
+    min-width: 200px;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.sobre, .skills, .projetos {
+    margin: 20px;
+}
+.subtitulo {
+    margin: 100px 0 100px 20px;
+    font-family: cursive;
+    color: white;
+    text-shadow:  10px 10px 10px black;
+    font-size: 1.7em;
+    opacity: 0;   
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 30px;
+}
+.conteudoSubtitulo {
+   opacity: 0; 
+}
+
+/* skills */
+
+ul {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+    list-style-type: none;
+}
+.accordeon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-content: center;
+    background-color: #2D2D2D;
+    padding: 10px;
+}
+.accordeon h3 {
+    align-self: center;
+}
+.accordeon .btnAccordion {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+}
+.accordeon .btnAccordion:hover {
+    background-color: #ccc;
+}
+.conteudoQueSomeEAparece {
+    display: none;
+}
+.conteudoQueSomeEAparece.ativoConteudoAccordeon {
+    display: block;
+}
+
+/* projetos */
+
+.projetos {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 100px;
+    align-content: center;
+}
+.projeto {
+    opacity: 0;
+    background-color: #2D2D2D;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column wrap;
+    transition: .4s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+.projeto:hover {
+    background-color: #505050;
+}
+.projeto img {
+    width: 100%;
+    height: 300px;
+}
+.projeto h3 {
+    margin: 30px 0;
+}
+.projetoDesaparece {
+    display: none;
+}
+.projetoDesaparece.ativoConteudoProjeto {
+    display: block;
+}
+#verMais {
+    padding: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    background-color: #ccc;
+    transition: .4s ease-in-out;
+}
+#verMais:hover {
+    background-color: white;
+    transform: translateY(-5px);
+}
+
+/* contato */
+
+.contato {
+   background-color: #2D2D2D; 
+   width: 100%;
+   border-radius: 10px;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+}
+.inputContato {
+    position: relative;
+}
+input {
+    padding: 15px;
+    width: 400px;
+    border-radius: 10px;
+}
+label {
+    position: absolute;
+    top: -30px;
+}
+.formulario button {
+    padding: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    background-color: #ccc;
+    transition: .4s ease-in-out;
+    margin-bottom: 30px;
+}
+.formulario button:hover {
+    background-color: white;
+    transform: translateY(-5px);
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(26 26 26);
+    padding: 20px;
+    margin-top: 50px;
+}
+/* animações */
+
+.scrollAparecerDireita {
+    animation: scrollAparecerDireita 1s ease-in-out forwards;
+    animation-delay: 500ms;
+}
+@keyframes scrollAparecerDireita {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.scrollAparecerEsquerda {
+    animation: scrollAparecerEsquerda 1s ease-in-out forwards;
+    animation-delay: 500ms;
+}
+@keyframes scrollAparecerEsquerda {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.scrollAparecerCentro {
+    animation: scrollAparecerCentro .5s ease-in-out forwards;
+}
+
+@keyframes scrollAparecerCentro {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}

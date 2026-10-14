@@ -111,8 +111,60 @@ const btnExpandir = () => {
     const adiconarMusicaLista = document.querySelector('.adiconarMusicaLista')
     adiconarMusicaLista.classList.toggle('ativoAdicionar')
     if (adiconarMusicaLista.classList.contains('ativoAdicionar')) {
-        botaoExpandirDiminuir.textContent = '<-|'
+        botaoExpandirDiminuir.textContent = '<<'
     } else {
-        botaoExpandirDiminuir.textContent = '|->'
+        botaoExpandirDiminuir.textContent = '>>'
     }
+}
+
+
+//script para botões de play 
+
+const botaoPlay = document.querySelectorAll('.botaoPlay')
+botaoPlay.forEach(bplay => bplay.addEventListener('click', () => btnPlay (bplay)))
+
+const btnPlay = (bplay) => {
+    const mostrar = document.querySelectorAll('.mostrar')
+    mostrar.forEach(most => most.classList.remove('ativoMostrarLadoDireito'))
+
+    const novoConteudoMostrado = bplay.getAttribute('data-id')
+    const novo = document.getElementById(novoConteudoMostrado)
+
+    novo.classList.add('ativoMostrarLadoDireito')
+
+}
+
+//script para botao de adicionar
+
+const botaoAdicionarLista = document.querySelectorAll('.botaoAdicionarLista')
+botaoAdicionarLista.forEach(mais => mais.addEventListener('click', () => btnAdd (mais)))
+
+const imagemLateral = document.querySelectorAll('.imagemLateral')
+imagemLateral.forEach(img => img.classList.add('imagemLateral'))
+
+const btnAdd = (mais) => {
+    let listaMusica = document.querySelector('.listaMusica')
+
+    let listaNovaMusica = document.createElement('li')
+    listaNovaMusica.classList.add('listaNovaMusica')
+    
+    let imagemListaNovaMusica = document.createElement('img')
+    imagemListaNovaMusica.classList.add('imagemListaNovaMusica')
+    imagemListaNovaMusica.src = mais.getAttribute('data-img')
+    
+    let spanListaNovaMusica = document.createElement('span')
+    spanListaNovaMusica.classList.add('spanListaNovaMusica')
+    spanListaNovaMusica.textContent = mais.getAttribute('data-target')
+
+    listaNovaMusica.appendChild(imagemListaNovaMusica)
+    listaNovaMusica.appendChild(spanListaNovaMusica)
+    listaMusica.appendChild(listaNovaMusica)
+    let list = mais.getAttribute('data-target')
+    listaNovaMusica = document.getElementById(list)
+    
+
+    console.log(listaMusica)
+
+    
+
 }
