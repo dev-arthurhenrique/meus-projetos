@@ -10,8 +10,33 @@ btnMenu.addEventListener('click', () => {
 	const navMenu = document.querySelector('#navMenu')
 	navMenu.classList.toggle('menuAtivo')
 	if (navMenu.classList.contains('menuAtivo')) {
-		btnMenu.textContent = 'X'
+		btnMenu.textContent = 'x'
 	} else {
 		btnMenu.textContent = '='
 	}
+})
+
+// script para accodeon
+
+const accordeon = document.querySelectorAll('.accordeon')
+const btnAccordion = document.querySelectorAll('.btnAccordion')
+accordeon.forEach(accord => accord.addEventListener('click', () => {
+	const novoId = accord.getAttribute('data-id')
+	const conteudoQueSomeEAparece = document.getElementById(novoId)
+	conteudoQueSomeEAparece.classList.toggle('ativoConteudoAccordeon')
+}))
+
+// script para btn ver mais projetos
+
+const verMais = document.getElementById('verMais')
+verMais.addEventListener('click', () => {
+	const projetoDesaparece = document.querySelectorAll('.projetoDesaparece')
+	projetoDesaparece.forEach(proDesaparece => {
+		proDesaparece.classList.toggle('ativoConteudoProjeto')
+		if (proDesaparece.classList.contains('ativoConteudoProjeto')) {
+			verMais.textContent = 'Ver Menos'
+		} else {
+			verMais.textContent = 'Ver Mais'
+		}
+	})
 })

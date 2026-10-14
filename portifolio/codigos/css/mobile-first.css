@@ -33,15 +33,16 @@ h1, .btnMenu {
 .btnMenu {
     cursor: pointer;
     font-size: 2em;
+    z-index: 2;
 }
 nav {
    position: absolute; 
    width: 100%;
-   background-color: #1a1a1a;
+   background-color: #121212d4;
    transform: translate(100%, 19%); 
    transition: .4s ease-in-out;
    opacity: 0;
-   top: -155%;
+   top: -300%;
    height: 100vh;
    display: flex;
    justify-content: center;
@@ -58,11 +59,17 @@ nav ul {
 nav a {
     text-decoration: none;
     color: white;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: black;
     font-size: 1.3em;
     transition: .4s ease-in-out;
+    border: 2px solid #ccc;
 }
 nav a:hover {
     color: black;
+    background-color: white;
 }
 nav.menuAtivo {
     transform: translate(0,19%);
@@ -153,6 +160,11 @@ ul {
     align-content: center;
     background-color: #2D2D2D;
     padding: 10px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.accordeon:hover {
+    background-color: #878787;
 }
 .accordeon h3 {
     align-self: center;
