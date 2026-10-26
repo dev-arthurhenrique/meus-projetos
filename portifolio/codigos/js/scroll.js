@@ -7,9 +7,6 @@ const callback = entradas => {
             else if (entrada.target.classList.contains('conteudoSubtitulo')) {
                 entrada.target.classList.add('scrollAparecerEsquerda')
             }
-            else if (entrada.target.classList.contains('projeto')) {
-                entrada.target.classList.add('scrollAparecerCentro')
-            }  
         }
         else {
             entrada.target.classList.remove('scrollAparecerDireita', 'scrollAparecerEsquerda', 'scrollAparecerCentro')

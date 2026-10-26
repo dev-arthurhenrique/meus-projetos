@@ -1,3 +1,7 @@
-body {
-    background-color: blue;
+
+.projetos {
+    flex-flow: row wrap;
+}
+.projeto {
+    width: 300px;
 }

@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #141414;
     color: white;
@@ -20,7 +23,6 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    position: relative;
     background-color: #1a1a1a;
     position: fixed;
     top: 0;
@@ -126,7 +128,8 @@ main {
     
 }
 .sobre, .skills, .projetos {
-    margin: 20px;
+    scroll-margin-top: 80px;
+    margin: 30px;
 }
 .subtitulo {
     margin: 100px 0 100px 20px;
@@ -192,11 +195,10 @@ ul {
 .projetos {
     display: flex;
     flex-flow: column wrap;
-    gap: 100px;
+    gap: 10px;
     align-content: center;
 }
 .projeto {
-    opacity: 0;
     background-color: #2D2D2D;
     padding: 20px;
     border-radius: 10px;
@@ -206,6 +208,7 @@ ul {
     transition: .4s ease-in-out;
     text-decoration: none;
     color: white;
+    width: 400px;
 }
 .projeto:hover {
     background-color: #505050;
@@ -224,11 +227,13 @@ ul {
     display: block;
 }
 #verMais {
+    display: flex;
+    justify-content: center;
     padding: 20px;
     cursor: pointer;
     font-size: 1.2em;
     border-radius: 10px;
-    width: 300px;
+    width: 40%;
     margin: auto;
     background-color: #ccc;
     transition: .4s ease-in-out;

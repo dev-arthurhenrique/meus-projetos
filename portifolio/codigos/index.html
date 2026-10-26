@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="css/mobile-first.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 720px)">
+    <link rel="stylesheet" href="css/dasktop.css" media="screen and (min-width: 1024px)">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
 </head>
 <body>
@@ -15,10 +17,10 @@
             <button class="btnMenu" aria-label="Abrir Menu">=</button>
             <nav id="navMenu">
                 <ul>
-                    <li><a href="sobre">Sobre</a></li>
-                    <li><a href="skills">Skills</a></li>
-                    <li><a href="projetos">Projetos</a></li>
-                    <li><a href="contato">Contato</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,11 +34,11 @@
             </div>
         </section>
         <main>
-            <section class="sobre">
+            <section class="sobre" id="sobre">
                 <h2 class="subtitulo">Sobre Mim</h2>
                 <p class="conteudoSubtitulo">Olá, sou o Arthur. Sou desenvolvedor Front-End e estudante de Ciência da Computação. Gosto de criar páginas web modernas, limpas e interativas usando HTML, CSS e JavaScript. Seja bem-vindo ao meu portfólio!</p>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <h2 class="subtitulo">Minhas skills</h2>
                 <ul>
                     <li class="conteudoSubtitulo listaSkills">
@@ -63,8 +65,8 @@
                 </ul>
             </section>
             <h2 class="subtitulo">Meus Projetos</h2>
-            <section class="projetos">
-            
+            <section class="projetos" id="projetos">
+                
                 <a class="projeto" href="#">
                     <img src="../imagens/perfil.jpg" alt="imagemProjeto">
                     <h3>Projeto x</h3>
@@ -95,9 +97,9 @@
                     <h3>Projeto x</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit accusantium iusto, earum accusamus nulla deleniti dolores officiis eos recusandae odio omnis, ea necessitatibus.</p>
                 </a>
-                <button id="verMais">Ver mais</button>
             </section>
-            <section class="contato">
+            <button id="verMais">Ver mais</button>
+            <section class="contato" id="contato">
                 <h2 class="subtitulo">Contato</h2>
                 <form action="cadastro.php" method="post" class="formulario"> 
                    <div class="inputContato">
