@@ -12,7 +12,10 @@ div#teste > span {
 menu#menu {
     align-self: center;
 }
-menu#menu > nav#nav > ul > li{
+#nav {
+    display: block;
+}
+menu#menu > nav#nav > ul > a > li{
     display: inline-block;
     padding: 10px;
 }

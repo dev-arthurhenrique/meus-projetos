@@ -1,9 +1,8 @@
-document.getElementById('burguer').addEventListener('click', b)
-function b () {
-    const menu = document.getElementById('nav')
-    if ( menu.style.display == 'block') {
-        menu.style.display = 'none'
-    } else {
-        menu.style.display = 'block'
-    }
-}
+// menu hamburguer
+
+const burguer = document.getElementById('burguer')
+burguer.addEventListener('click', () => {
+    const nav = document.getElementById('nav')
+    nav.classList.toggle('ativoMenu')
+})
+

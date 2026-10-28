@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #141726; 
     color: white;
@@ -16,6 +19,9 @@ header, main {
 }
 header {
     margin-bottom: 100px;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 p {
     font-size: 1.07em;
@@ -23,6 +29,14 @@ p {
 h2 {
     color: #8556DC;
     margin: 70px 0;
+}
+.header {
+    position: fixed;
+    top: -1px;
+    z-index: 1;
+    background-color: #141726;
+    box-shadow: 0 0 10px white;
+    width: 100%;
 }
 #teste {
     display: flex;
@@ -34,30 +48,36 @@ h2 {
     height: 110px;
     align-self: center;
 }
-#teste > span {
+#burguer {
     font-size: 2em;
     color: #FF0074;
     align-self: center;
     cursor: pointer;
     transition: transform .4s ease-in-out;
 }
-#teste > span:hover {
+#burguer:hover {
     transform: rotate(180deg);
 }
-.header > menu#menu > nav {
+#nav {
     display: none;
+}
+#nav.ativoMenu {
+    display: block;
 }
 .header > menu#menu > nav > ul {
     list-style-type: none;
     padding: 15px;
 }
-.header > menu#menu > nav > ul  > li{
+menu#menu > nav#nav > ul > a {
+    text-decoration: none;
+}
+.header > menu#menu > nav > ul  > a > li{
     color: white;
     font-size: 1em;
     padding: 20px;
     transition: transform .4s ease-in-out, color .4s ease-in-out;
 }
-.header > menu#menu > nav > ul  > li:hover {
+.header > menu#menu > nav > ul  > a > li:hover {
     transform: translate(5px, -5px);
     color: #9c6ef2;
     text-decoration: underline;
@@ -97,7 +117,9 @@ section#banner > div#conteudoBanner > a:hover {
 }
 
 /* Dados */
-
+ #banner, #contato, #historia, #capturas, #personagens {
+    scroll-margin-top: 200px;
+}
 article#dados > ul.listaDados {
     list-style-type: none;
 }

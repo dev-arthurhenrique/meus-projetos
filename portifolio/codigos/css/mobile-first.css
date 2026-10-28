@@ -185,6 +185,9 @@ ul {
 }
 .conteudoQueSomeEAparece {
     display: none;
+    background-color: #626262;
+    padding: 5px;
+    transition: .4s ease-in-out;
 }
 .conteudoQueSomeEAparece.ativoConteudoAccordeon {
     display: block;

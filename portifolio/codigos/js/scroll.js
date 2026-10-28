@@ -8,9 +8,6 @@ const callback = entradas => {
                 entrada.target.classList.add('scrollAparecerEsquerda')
             }
         }
-        else {
-            entrada.target.classList.remove('scrollAparecerDireita', 'scrollAparecerEsquerda', 'scrollAparecerCentro')
-        }
     })
 }
 const objeto = {
