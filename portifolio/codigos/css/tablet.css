@@ -1,7 +1,11 @@
 
 .projetos {
     flex-flow: row wrap;
+    justify-content: center;
 }
 .projeto {
-    width: 300px;
+    width: 500px;
+}
+.projeto img {
+    width: 100%;
 }

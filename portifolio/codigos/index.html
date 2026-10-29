@@ -44,7 +44,7 @@
                     <li class="conteudoSubtitulo listaSkills">
                         <div class="accordeon" data-id="html">
                             <h3>HTML</h3>
-                            <button class="btnAccordion"><img src="../imagens/chevron-down.svg" alt="botaoSetaBaixo"></button>
+                            <button class="btnAccordion">+</button>
                         </div>
                         <p class="conteudoQueSomeEAparece" id="html">
                             
@@ -55,7 +55,7 @@
                     <li class="conteudoSubtitulo listaSkills">
                         <div class="accordeon" data-id="css">
                             <h3>CSS</h3>
-                            <button class="btnAccordion"><img src="../imagens/chevron-down.svg" alt="botaoSetaBaixo"></button>
+                            <button class="btnAccordion">+</button>
                         </div>
                         <p class="conteudoQueSomeEAparece" id="css">
 
@@ -68,7 +68,7 @@
                     <li class="conteudoSubtitulo listaSkills">
                         <div class="accordeon" data-id="js">
                             <h3>JavaScript</h3>
-                            <button class="btnAccordion"><img src="../imagens/chevron-down.svg" alt="botaoSetaBaixo"></button>
+                            <button class="btnAccordion">+</button>
                         </div>
                         <p class="conteudoQueSomeEAparece" id="js">
                             
@@ -80,7 +80,7 @@
                     </li>
                 </ul>
             </section>
-            <h2 class="subtitulo">Meus Projetos</h2>
+            <h2 class="subtitulo" id="projetos">Meus Projetos</h2>
             <section class="projetos" id="projetos">
                 
                 <a class="projeto" href="https://landingpage-zeta-wine.vercel.app/" target="_blank">
@@ -99,25 +99,22 @@
                     <p>Um dashbord simples, mas com designer moderno e responsivo. Conta com lista de tarefas, agenda e atividade semanal. Projeto desenvolvido apenas com HTML E CSS</p>
                 </a>
                 <a class="projeto projetoDesaparece" href="#">
-                    <img src="../imagens/perfil.jpg" alt="imagemProjeto">
-                    <h3>Projeto x</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit accusantium iusto, earum accusamus nulla deleniti dolores officiis eos recusandae odio omnis, ea necessitatibus.</p>
+                    <img src="../imagens/projeto4.png" alt="imagemProjeto">
+                    <h3>Projeto Spiritfarer</h3>
+                    <p>Projeto de divulgação sobre o jogo Spiritfarer. Landing Page responsiva e otimizada</p>
                 </a>
                 <a class="projeto projetoDesaparece" href="#">
-                    <img src="../imagens/perfil.jpg" alt="imagemProjeto">
-                    <h3>Projeto x</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit accusantium iusto, earum accusamus nulla deleniti dolores officiis eos recusandae odio omnis, ea necessitatibus.</p>
+                    <h3 class="emBreve">EM BREVE</h3>
                 </a>
                 <a class="projeto projetoDesaparece" href="#">
-                    <img src="../imagens/perfil.jpg" alt="imagemProjeto">
-                    <h3>Projeto x</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit accusantium iusto, earum accusamus nulla deleniti dolores officiis eos recusandae odio omnis, ea necessitatibus.</p>
+                    <h3 class="emBreve">EM BREVE</h3> 
                 </a>
             </section>
             <button id="verMais">Ver mais</button>
+
             <section class="contato" id="contato">
                 <h2 class="subtitulo">Contato</h2>
-                <form action="cadastro.php" method="post" class="formulario"> 
+                <form class="formulario"> 
                    <div class="inputContato">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome">
@@ -126,9 +123,14 @@
                     <label for="nome">Email</label>
                     <input type="email" id="email">
                    </div>
-                   <button type="submit">Enviar</button>
+                   <div class="inputContato">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem"></textarea>
+                   </div>
+                   <button type="submit" id="btnEnviar">Enviar</button>
                 </form>
             </section>
+
         </main>
         <footer>
             <span id="footer">Esse Projeto foi desenvolvido por Arthur Henrique</span>
@@ -137,5 +139,6 @@
 
     <script src="js/menu-modal.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/formulario.js"></script>
 </body>
 </html>

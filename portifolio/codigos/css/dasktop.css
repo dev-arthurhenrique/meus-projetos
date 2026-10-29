@@ -28,3 +28,12 @@ nav a {
     background-color: transparent;
     border: none;
 }
+.projetos {
+    flex-flow: row wrap;
+}
+.projeto {
+    width: 400px;
+}
+.projeto img {
+    width: 100%;
+}

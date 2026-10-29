@@ -19,11 +19,22 @@ btnMenu.addEventListener('click', () => {
 // script para accodeon
 
 const accordeon = document.querySelectorAll('.accordeon')
-const btnAccordion = document.querySelectorAll('.btnAccordion')
+
 accordeon.forEach(accord => accord.addEventListener('click', () => {
 	const novoId = accord.getAttribute('data-id')
 	const conteudoQueSomeEAparece = document.getElementById(novoId)
 	conteudoQueSomeEAparece.classList.toggle('ativoConteudoAccordeon')
+
+	const btnAccordion = accord.querySelector('.btnAccordion')
+
+	console.log(btnAccordion)
+
+
+	if (conteudoQueSomeEAparece.classList.contains('ativoConteudoAccordeon'))  {
+		btnAccordion.textContent = '-'
+	} else {
+		btnAccordion.textContent = '+'
+	}
 }))
 
 // script para btn ver mais projetos
