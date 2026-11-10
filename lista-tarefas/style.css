@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #634877;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #C9BECB;
+    padding: 40px;
+    border-radius: 15px;
+    border: 3px solid #ccc;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.172);
+    transition: .4s ease-in-out;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 40px;
+}
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px white;
+}
+h1 {
+    color: #634877;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.707);
+}
+#inputTarefa, #adicionarTarefa{
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #7c7c7c;
+    font-size: 1.2em;
+    transition: .4s ease-in-out;
+}
+#adicionarTarefa:hover {
+    transform: translateY(-5px);
+    background-color: #634877;
+    color: white;
+    cursor: pointer;
+}
+#listaTarefas {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+.novaTarefa {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #523B65;
+    color: white;
+    padding: 20px;
+    border: 3px solid #7c7c7c;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+}
+.novaTarefa:hover {
+    transform: rotate(1deg);
+    background-color: #634877;
+}
+.checkbox {
+    width: 50px;
+    cursor: pointer;
+}
+.nomeTarefa {
+    color: white;
+}
+.botaoRemover {
+    padding: 5px;
+    border-radius: 5px;
+    color:red;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.botaoRemover:hover {
+    background-color: #C9BECB;
+}
+#mensagem {
+    color: #634877;
+}
